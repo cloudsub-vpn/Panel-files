@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>__USER_NAME__ - letpix Portal</title>
-    <link href="https://raw.githubusercontent.com/cloudsub-vpn/Panel-files/refs/heads/main/css1-subp" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-        darkMode: 'class',
-        theme: {
-            extend: {
-                fontFamily: {
-                    fa: ['Vazirmatn', 'sans-serif'],
-                    en: ['Inter', 'sans-serif'],
-                },
-                colors: {
-                    dark: {
-                        900: '#0b0f19',
-                        800: '#111827',
-                        700: '#1f2937',
+    <title>__USER_NAME__ - Subscriber Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/itsyebekhe/nahan@main/tailwindcss.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        fa: ['Vazirmatn', 'sans-serif'],
+                        en: ['Inter', 'sans-serif'],
                     },
-                    brand: {
-                        500: '#6366f1',
-                        600: '#4f46e5',
+                    colors: {
+                        dark: {
+                            900: '#0b0f19',
+                            800: '#111827',
+                            700: '#1f2937',
+                        },
+                        brand: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                        }
                     }
                 }
             }
         }
-    }
-</script>
+    </script>
     <style>
         :root {
             --bg-primary: #f3f4f6;
@@ -228,7 +228,7 @@
                     Help & Support
                 </h3>
                 <p class="text-xs text-secondary mb-4 leading-relaxed">Having trouble connecting? Keep your clients updated or contact support for assistance.</p>
-                <a href="https://t.me/letpix" class="btn-primary w-full py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm">
+                <a href="https://t.me/+mx5EmkbHzm41Y2Q5" class="btn-primary w-full py-2.5 rounded-xl text-xs font-bold flex items-center justify-center gap-2 shadow-sm">
                     <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.19-.08-.05-.19-.02-.27 0-.12.03-1.98 1.26-5.59 3.7-.53.36-1.01.54-1.44.53-.47-.01-1.38-.27-2.05-.49-.83-.27-1.49-.42-1.44-.88.03-.24.36-.48.98-.74 3.84-1.67 6.4-2.78 7.68-3.32 3.64-1.52 4.4-1.79 4.9-1.8.11 0 .36.03.49.14.11.09.14.22.15.34-.01.07-.01.16-.02.26z"/></svg>
                     Telegram Support
                 </a>
@@ -294,7 +294,7 @@
                         </h4>
                         <p class="text-xs text-secondary mb-4 leading-relaxed" data-i18n="universalDesc">This URL automatically detects your client and delivers the optimal format.</p>
                         
-                        <div class="flex flex-col sm:flex-row gap-3 w-full">
+                        <div class="flex flex-col sm:flex-row gap-3 w-full" dir="ltr">
                             <input type="text" id="link-normal" value="__SYNC_NORMAL__" readonly class="input-field flex-1 px-4 py-3 rounded-xl text-sm font-mono w-full outline-none shadow-inner focus:ring-2 focus:ring-indigo-500 transition-shadow">
                             <div class="flex gap-2">
                                 <button onclick="copyLink('link-normal')" class="btn-primary flex-1 sm:flex-none px-6 py-3 rounded-xl text-sm font-bold shrink-0 flex justify-center items-center gap-2 shadow-md">
@@ -320,11 +320,11 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <!-- Raw -->
                             <div class="p-4 rounded-xl border border-accent-border space-y-2 bg-black/5 dark:bg-white/5" style="border-color: var(--accent-border);">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold" style="color: var(--text-primary);">Raw Configs (Text/URI)</span>
+                                <div class="flex justify-between items-center" dir="ltr">
+                                    <span class="text-xs font-bold text-left" dir="ltr" style="color: var(--text-primary);">Raw Configs (Text/URI)</span>
                                     <span class="text-[9px] uppercase tracking-wider font-bold px-1.5 py-0.5 rounded" style="background: rgba(99, 102, 241, 0.15); color: #6366f1;">RAW</span>
                                 </div>
-                                <div class="flex gap-2">
+                                <div class="flex gap-2" dir="ltr">
                                     <input type="text" id="link-raw-fmt" readonly class="input-field flex-1 px-3 py-2 rounded-lg text-xs font-mono w-full outline-none" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--accent-border);">
                                     <button onclick="copyLink('link-raw-fmt')" class="px-3 py-2 rounded-lg text-xs font-bold bg-indigo-500 text-white flex items-center gap-1 hover:bg-indigo-600 transition-colors">
                                         <span data-i18n="copy">Copy</span>
@@ -337,11 +337,11 @@
 
                             <!-- Base64 -->
                             <div class="p-4 rounded-xl border border-accent-border space-y-2 bg-black/5 dark:bg-white/5" style="border-color: var(--accent-border);">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold" style="color: var(--text-primary);">Base64 Sub (V2Ray / Shadowrocket)</span>
+                                <div class="flex justify-between items-center" dir="ltr">
+                                    <span class="text-xs font-bold text-left" dir="ltr" style="color: var(--text-primary);">Base64 Sub (V2Ray / Shadowrocket)</span>
                                     <span class="text-[9px] uppercase tracking-wider font-bold px-1.5 py-0.5 rounded" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">BASE64</span>
                                 </div>
-                                <div class="flex gap-2">
+                                <div class="flex gap-2" dir="ltr">
                                     <input type="text" id="link-base64-fmt" readonly class="input-field flex-1 px-3 py-2 rounded-lg text-xs font-mono w-full outline-none" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--accent-border);">
                                     <button onclick="copyLink('link-base64-fmt')" class="px-3 py-2 rounded-lg text-xs font-bold bg-emerald-500 text-white flex items-center gap-1 hover:bg-emerald-600 transition-colors">
                                         <span data-i18n="copy">Copy</span>
@@ -354,11 +354,11 @@
 
                             <!-- Singbox -->
                             <div class="p-4 rounded-xl border border-accent-border space-y-2 bg-black/5 dark:bg-white/5" style="border-color: var(--accent-border);">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold" style="color: var(--text-primary);">Sing-box Subscription (JSON)</span>
+                                <div class="flex justify-between items-center" dir="ltr">
+                                    <span class="text-xs font-bold text-left" dir="ltr" style="color: var(--text-primary);">Sing-box Subscription (JSON)</span>
                                     <span class="text-[9px] uppercase tracking-wider font-bold px-1.5 py-0.5 rounded" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">SINGBOX</span>
                                 </div>
-                                <div class="flex gap-2">
+                                <div class="flex gap-2" dir="ltr">
                                     <input type="text" id="link-singbox-fmt" readonly class="input-field flex-1 px-3 py-2 rounded-lg text-xs font-mono w-full outline-none" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--accent-border);">
                                     <button onclick="copyLink('link-singbox-fmt')" class="px-3 py-2 rounded-lg text-xs font-bold bg-amber-500 text-white flex items-center gap-1 hover:bg-amber-600 transition-colors">
                                         <span data-i18n="copy">Copy</span>
@@ -371,16 +371,33 @@
 
                             <!-- Clash -->
                             <div class="p-4 rounded-xl border border-accent-border space-y-2 bg-black/5 dark:bg-white/5" style="border-color: var(--accent-border);">
-                                <div class="flex justify-between items-center">
-                                    <span class="text-xs font-bold" style="color: var(--text-primary);">Clash Subscription (YAML)</span>
+                                <div class="flex justify-between items-center" dir="ltr">
+                                    <span class="text-xs font-bold text-left" dir="ltr" style="color: var(--text-primary);">Clash Subscription (YAML)</span>
                                     <span class="text-[9px] uppercase tracking-wider font-bold px-1.5 py-0.5 rounded" style="background: rgba(139, 92, 246, 0.15); color: #8b5cf6;">CLASH</span>
                                 </div>
-                                <div class="flex gap-2">
+                                <div class="flex gap-2" dir="ltr">
                                     <input type="text" id="link-clash-fmt" readonly class="input-field flex-1 px-3 py-2 rounded-lg text-xs font-mono w-full outline-none" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--accent-border);">
                                     <button onclick="copyLink('link-clash-fmt')" class="px-3 py-2 rounded-lg text-xs font-bold bg-violet-500 text-white flex items-center gap-1 hover:bg-violet-600 transition-colors">
                                         <span data-i18n="copy">Copy</span>
                                     </button>
                                     <button onclick="showQRModal(document.getElementById('link-clash-fmt').value)" class="p-2 rounded-lg border border-accent-border hover:bg-white/10 flex items-center justify-center" style="border-color: var(--accent-border);">
+                                        <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm14 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- v2rayN JSON -->
+                            <div class="p-4 rounded-xl border border-accent-border space-y-2 bg-black/5 dark:bg-white/5" style="border-color: var(--accent-border);">
+                                <div class="flex justify-between items-center" dir="ltr">
+                                    <span class="text-xs font-bold text-left" dir="ltr" style="color: var(--text-primary);">v2rayN Subscription (JSON)</span>
+                                    <span class="text-[9px] uppercase tracking-wider font-bold px-1.5 py-0.5 rounded" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">V2RAYN</span>
+                                </div>
+                                <div class="flex gap-2" dir="ltr">
+                                    <input type="text" id="link-v2rayn-fmt" readonly class="input-field flex-1 px-3 py-2 rounded-lg text-xs font-mono w-full outline-none" style="background: var(--bg-card); color: var(--text-primary); border: 1px solid var(--accent-border);">
+                                    <button onclick="copyLink('link-v2rayn-fmt')" class="px-3 py-2 rounded-lg text-xs font-bold bg-pink-500 text-white flex items-center gap-1 hover:bg-pink-600 transition-colors">
+                                        <span data-i18n="copy">Copy</span>
+                                    </button>
+                                    <button onclick="showQRModal(document.getElementById('link-v2rayn-fmt').value)" class="p-2 rounded-lg border border-accent-border hover:bg-white/10 flex items-center justify-center" style="border-color: var(--accent-border);">
                                         <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm14 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"></path></svg>
                                     </button>
                                 </div>
@@ -687,11 +704,13 @@
             const base64Input = document.getElementById('link-base64-fmt');
             const singboxInput = document.getElementById('link-singbox-fmt');
             const clashInput = document.getElementById('link-clash-fmt');
+            const v2raynInput = document.getElementById('link-v2rayn-fmt');
 
             if (rawInput) rawInput.value = normalLink + (normalLink.includes('?') ? '&flag=raw' : '?flag=raw');
             if (base64Input) base64Input.value = normalLink + (normalLink.includes('?') ? '&flag=base64' : '?flag=base64');
             if (singboxInput) singboxInput.value = normalLink + (normalLink.includes('?') ? '&flag=singbox' : '?flag=singbox');
             if (clashInput) clashInput.value = normalLink + (normalLink.includes('?') ? '&flag=clash' : '?flag=clash');
+            if (v2raynInput) v2raynInput.value = normalLink + (normalLink.includes('?') ? '&flag=vjson' : '?flag=vjson');
         })();
     
 </script>
