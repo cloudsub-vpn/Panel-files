@@ -46,51 +46,51 @@
             --accent-border: #c7d2fe;
             --accent-hover: #4f46e5;
             --green-bg: #d1fae5;
-            --green-border: #a7f3d0;
-            --green-text: #059669;
-            --amber-bg: #fef3c7;
-            --amber-border: #fde68a;
-            --amber-text: #d97706;
-            --red-bg: #fee2e2;
-            --red-border: #fecaca;
-            --red-text: #dc2626;
-            --progress-bg: #e5e7eb;
+            --green-border: a7f3d0;
+            --green-text: 059669;
+            --amber-bg: fef3c7;
+            --amber-border: fde68a;
+            --amber-text: d97706;
+            --red-bg: fee2e2;
+            --red-border: fecaca;
+            --red-text: dc2626;
+            --progress-bg: e5e7eb;
             --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
-            --btn-primary-bg: #6366f1;
-            --btn-primary-hover: #4f46e5;
-            --btn-secondary-bg: #f3f4f6;
-            --btn-secondary-hover: #e5e7eb;
+            --btn-primary-bg: 6366f1;
+            --btn-primary-hover: 4f46e5;
+            --btn-secondary-bg: f3f4f6;
+            --btn-secondary-hover: e5e7eb;
             --modal-bg: rgba(0,0,0,0.5);
-            --modal-card: #ffffff;
+            --modal-card: ffffff;
         }
 
         .dark {
-            --bg-primary: #0b0f19;
+            --bg-primary: 0b0f19;
             --bg-card: rgba(17, 24, 39, 0.7);
             --bg-card-inner: rgba(31, 41, 55, 0.5);
-            --bg-input: #111827;
+            --bg-input: 111827;
             --border-card: rgba(99, 102, 241, 0.15);
             --border-inner: rgba(99, 102, 241, 0.1);
-            --text-primary: #f9fafb;
-            --text-secondary: #9ca3af;
-            --text-muted: #6b7280;
-            --accent: #818cf8;
+            --text-primary: f9fafb;
+            --text-secondary: 9ca3af;
+            --text-muted: 6b7280;
+            --accent: 818cf8;
             --accent-light: rgba(99, 102, 241, 0.15);
             --accent-border: rgba(99, 102, 241, 0.3);
-            --accent-hover: #6366f1;
+            --accent-hover: 6366f1;
             --green-bg: rgba(16, 185, 129, 0.1);
             --green-border: rgba(16, 185, 129, 0.2);
-            --green-text: #34d399;
+            --green-text: 34d399;
             --amber-bg: rgba(245, 158, 11, 0.1);
             --amber-border: rgba(245, 158, 11, 0.2);
-            --amber-text: #fbbf24;
+            --amber-text: fbbf24;
             --red-bg: rgba(239, 68, 68, 0.1);
             --red-border: rgba(239, 68, 68, 0.2);
-            --red-text: #f87171;
+            --red-text: f87171;
             --progress-bg: rgba(31, 41, 55, 0.8);
             --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-            --btn-primary-bg: #6366f1;
-            --btn-primary-hover: #4f46e5;
+            --btn-primary-bg: 6366f1;
+            --btn-primary-hover: 4f46e5;
             --btn-secondary-bg: rgba(31, 41, 55, 0.6);
             --btn-secondary-hover: rgba(55, 65, 81, 0.8);
             --modal-bg: rgba(0,0,0,0.8);
@@ -533,9 +533,6 @@
                     <a href="#connection" class="portal-nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-xs font-bold">
                         <span>↗</span><span>اتصال و کانفیگ</span>
                     </a>
-                    <a href="#formats" class="portal-nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-xs font-bold">
-                        <span>▦</span><span>فرمت‌ها</span>
-                    </a>
                     <a href="#support" class="portal-nav-item flex items-center gap-3 px-3 py-3 rounded-xl text-xs font-bold">
                         <span>?</span><span>پشتیبانی</span>
                     </a>
@@ -673,64 +670,7 @@
                     </div>
                 </section>
 
-                <!-- Formats -->
-                <section id="formats" class="bento-card p-5 sm:p-7 mb-6">
-                    <div class="mb-5">
-                        <div class="text-[10px] font-bold text-secondary portal-kicker mb-1">CONFIGURATION FORMATS</div>
-                        <h2 class="text-xl font-black" style="color:var(--text-primary)">فرمت‌های اشتراک</h2>
-                        <p class="text-xs text-secondary mt-2">برای کلاینت‌های مختلف، لینک اختصاصی همان فرمت را دریافت کنید.</p>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                        <div class="p-4 rounded-2xl" style="background:var(--bg-card-inner);border:1px solid var(--border-inner)">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="font-black text-sm" style="color:var(--text-primary)">RAW / URI</span>
-                                <span class="text-[9px] font-black px-2 py-1 rounded-md" style="background:var(--accent-light);color:var(--accent)">01</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <input id="link-raw-fmt" readonly class="input-field flex-1 min-w-0 px-3 py-2.5 rounded-lg text-[10px] font-mono outline-none">
-                                <button onclick="copyLink('link-raw-fmt')" class="btn-primary px-3 rounded-lg text-[10px] font-bold">کپی</button>
-                                <button onclick="showQRModal(document.getElementById('link-raw-fmt').value)" class="btn-secondary px-3 rounded-lg text-[10px] font-bold">QR</button>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-2xl" style="background:var(--bg-card-inner);border:1px solid var(--border-inner)">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="font-black text-sm" style="color:var(--text-primary)">BASE64</span>
-                                <span class="text-[9px] font-black px-2 py-1 rounded-md" style="background:var(--green-bg);color:var(--green-text)">02</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <input id="link-base64-fmt" readonly class="input-field flex-1 min-w-0 px-3 py-2.5 rounded-lg text-[10px] font-mono outline-none">
-                                <button onclick="copyLink('link-base64-fmt')" class="btn-primary px-3 rounded-lg text-[10px] font-bold">کپی</button>
-                                <button onclick="showQRModal(document.getElementById('link-base64-fmt').value)" class="btn-secondary px-3 rounded-lg text-[10px] font-bold">QR</button>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-2xl" style="background:var(--bg-card-inner);border:1px solid var(--border-inner)">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="font-black text-sm" style="color:var(--text-primary)">SING-BOX JSON</span>
-                                <span class="text-[9px] font-black px-2 py-1 rounded-md" style="background:var(--amber-bg);color:var(--amber-text)">03</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <input id="link-singbox-fmt" readonly class="input-field flex-1 min-w-0 px-3 py-2.5 rounded-lg text-[10px] font-mono outline-none">
-                                <button onclick="copyLink('link-singbox-fmt')" class="btn-primary px-3 rounded-lg text-[10px] font-bold">کپی</button>
-                                <button onclick="showQRModal(document.getElementById('link-singbox-fmt').value)" class="btn-secondary px-3 rounded-lg text-[10px] font-bold">QR</button>
-                            </div>
-                        </div>
-
-                        <div class="p-4 rounded-2xl" style="background:var(--bg-card-inner);border:1px solid var(--border-inner)">
-                            <div class="flex justify-between items-center mb-3">
-                                <span class="font-black text-sm" style="color:var(--text-primary)">CLASH YAML</span>
-                                <span class="text-[9px] font-black px-2 py-1 rounded-md" style="background:rgba(124,58,237,.10);color:#7c3aed">04</span>
-                            </div>
-                            <div class="flex gap-2">
-                                <input id="link-clash-fmt" readonly class="input-field flex-1 min-w-0 px-3 py-2.5 rounded-lg text-[10px] font-mono outline-none">
-                                <button onclick="copyLink('link-clash-fmt')" class="btn-primary px-3 rounded-lg text-[10px] font-bold">کپی</button>
-                                <button onclick="showQRModal(document.getElementById('link-clash-fmt').value)" class="btn-secondary px-3 rounded-lg text-[10px] font-bold">QR</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                
 
                 <!-- Service details + support -->
                 <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
