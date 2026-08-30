@@ -879,11 +879,11 @@
             const root = document.documentElement;
             const themeLabel = document.getElementById('theme-label');
             if (isDark) {
-                root.classList.add('dark');
+                root.classList.remove('dark');
                 document.getElementById('theme-icon').textContent = '☀️';
                 if (themeLabel) themeLabel.textContent = currentLang === 'fa' ? 'روشن' : 'Light';
             } else {
-                root.classList.remove('dark');
+                root.classList.add('dark');
                 document.getElementById('theme-icon').textContent = '🌙';
                 if (themeLabel) themeLabel.textContent = currentLang === 'fa' ? 'تاریک' : 'Dark';
             }
