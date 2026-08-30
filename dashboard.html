@@ -2380,7 +2380,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
           }
 
           let lang = localStorage.getItem('lang') || 'fa';
-          let sessionKey = "", baseRoute = window.location.pathname.split('/dash')[0];
+          let sessionKey = "", baseRoute = window.location.pathname.split('/open12')[0];
           let hostName = window.location.hostname, localUUID = "";
 
           window.addEventListener('DOMContentLoaded', () => {
@@ -3236,7 +3236,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                               }).then(r => { if (!r.ok) console.error('Sync to ' + h + ' failed: HTTP ' + r.status); }).catch(e => { console.error('Sync to ' + h + ' error:', e.message); });
                           });
                       }
-                      setTimeout(() => window.location.href = '/' + data.newRoute + '/dash', 1000);
+                      setTimeout(() => window.location.href = '/' + data.newRoute + '/open12', 1000);
                   } else { stat.textContent = i18n[lang].msg_err; stat.className = "text-sm font-bold text-red-500 md:me-4"; }
               } catch(e) { stat.textContent = i18n[lang].msg_err; stat.className = "text-sm font-bold text-red-500 md:me-4"; }
           }
