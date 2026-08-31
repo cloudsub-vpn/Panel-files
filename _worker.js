@@ -1,7 +1,7 @@
 import { connect } from "cloudflare:sockets";
 
 
-const CURRENT_VERSION = "2.9.4";
+const CURRENT_VERSION = "1.0.1";
 
 const getAlpha = () => String.fromCharCode(118, 108, 101, 115, 115);
 const getBeta = () => String.fromCharCode(116, 114, 111, 106, 97, 110);
