@@ -1664,11 +1664,11 @@ links.push("vl" + "e" + "ss://" + user.uuid + "@0.0.0.0:1?encryption=none&securi
 					const tlsParams = isTlsPort ? ("&insecure=0&fp=" + fp + "&allowInsecure=0&sni=" + host) : "";
 
 					if (enableVless) {
-						const remark = "ZEUS | " + proxy.flagEmoji + " | " + user.username;
+						const remark = "LETPIX | " + proxy.flagEmoji + " | " + user.username;
 						links.push("vl" + "e" + "ss://" + user.uuid + "@" + ip + ":" + portStr + "?path=" + proxy.currentDynPath + "&security=" + tlsVal + "&encryption=none&host=" + host + "&type=ws" + tlsParams + userFrag + "#" + encodeURIComponent(remark));
 					}
 					if (enableTrojan) {
-						const trojanRemark = "ZEUS | " + proxy.flagEmoji + " | " + user.username;
+						const trojanRemark = "LETPIX | " + proxy.flagEmoji + " | " + user.username;
 						links.push("trojan://" + user.uuid + "@" + ip + ":" + portStr + "?path=" + proxy.currentDynPath + "&security=" + tlsVal + "&host=" + host + "&type=ws" + tlsParams + userFrag + "#" + encodeURIComponent(trojanRemark));
 					}
 				});
