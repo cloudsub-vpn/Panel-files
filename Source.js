@@ -10591,8 +10591,6 @@ ${COMMON_TOAST_HTML}
 			var fp = u.fingerprint || 'chrome';
 			const dynPath = encodeURIComponent("/stream/PANEL_ZEUS/" + (u.uuid ? u.uuid.split("-")[4] : "default"));
 			const links = [];
-			const m1 = decodeURIComponent('سلام');
-			const m2 = decodeURIComponent('خوبی');
 			let remVol = "Unlimited";
 			if (u.limit_gb) {
 				let rem = u.limit_gb - (u.used_gb || 0);
